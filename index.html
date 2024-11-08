@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="email" placeholder="Enter Email" id="email" />
+    <input type="password" placeholder="Enter Password" id="password" />
+    <input type="text" placeholder="enter name" id="name" />
+    <input type="number" placeholder="enter age" id="age" />
+
+    <button id="signup">Signup</button>
+    <a href="#" onclick="window.location.replace('loginpage.html')">Login</a>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCjbbA-4eQdWpJhlH1Q7DSKX1sQaTLtUJM",
+            authDomain: "fir-53f3e.firebaseapp.com",
+            databaseURL: "https://fir-53f3e-default-rtdb.firebaseio.com",
+            projectId: "fir-53f3e",
+            storageBucket: "fir-53f3e.firebasestorage.app",
+            messagingSenderId: "935843526966",
+            appId: "1:935843526966:web:63b78a73aa8fc202e1db97",
+            measurementId: "G-0FT607NM8J"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
